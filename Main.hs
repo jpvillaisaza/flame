@@ -1,18 +1,28 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module Main (main) where
+module Main
+  ( main
+  )
+  where
 
+-- base
 import qualified Control.Monad as Monad
 import qualified Data.Bool as Bool
 import qualified Data.Char as Char
 import qualified Data.List as List
 import qualified Data.Maybe as Maybe
 import qualified System.Console.GetOpt as GetOpt
-import qualified System.Directory as Directory
 import qualified System.Environment as Environment
 import qualified System.Exit as Exit
-import qualified System.FilePath as FilePath
 import qualified System.IO as IO
+
+-- directory
+import qualified System.Directory as Directory
+
+-- filepath
+import qualified System.FilePath as FilePath
+
+-- process
 import qualified System.Process as Process
 
 lame :: FilePath
